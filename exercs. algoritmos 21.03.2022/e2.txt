@@ -1,0 +1,18 @@
+nome = str(input("Digite o nome do produto:"))
+grupo = input("Informe o grupo(A - Grupo A | B - Grupo B")
+preco = float(input("Qual o preço de fábrica do produto do estoque?"))
+
+
+if grupo.lower() == 'a':
+    valor = preco + (preco * 20//100)
+    print("O preço com a margem de lucro é:", valor)
+    
+elif grupo.lower() == 'b':
+    valor = preco + (preco * 30//100)
+    print("O preço com a margem de lucro é:", valor)
+
+elif grupo.lower() != 'a' and grupo.lower() != 'b' :
+    valor = preco + (preco * 10//100)
+    print("O preço com a margem de lucro é:", valor)
+else:
+    print("Parametro não encontrado")

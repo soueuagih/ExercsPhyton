@@ -1,0 +1,14 @@
+import math as m
+
+tipo = input("Informe o tipo da área(Q - Quadrado | C - Circulo)")
+
+if tipo.lower() == 'q':
+    valor = float(input("Informe o valor do lado do quadrado:"))
+    area = valor * valor
+    print(f'O valor da área do quadrado é {area:.2f}')
+elif tipo.lower() == 'c':
+    valor = float(input("Informe o valor do raio do círculo:"))
+    area = m.pi * (valor ** 2)
+    print(f'O valor da área do círculo é {area:.2f}')
+else:
+    print('O tipo informado é invalido')
